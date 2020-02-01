@@ -1,1 +1,671 @@
-<html><body>123</body></html>
+<DOCTYPE html>
+
+<html lang="en" class="csstransforms csstransforms3d csstransitions">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	<title>myresume </title>
+	
+
+	<meta name="description" content="FDzFenris">
+    <meta name="keywords" content="FDzFenris">
+  	<meta name="author" content="FDzFenris">
+
+<!-- 	<link href="fdzferrir/css" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" href="fdzferrir/bootstrap.min.css" type="text/css" media="screen">
+	<!-- <link rel="stylesheet" href="fdzferrir/font-awesome.min.css" type="text/css" media="screen"> -->
+	<link rel="stylesheet" href="fdzferrir/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fdzferrir/animate.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="fdzferrir/style.css" type="text/css" media="screen">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<!-- 	<script type="text/javascript" src="invisible_debut.js" ></script> -->
+
+
+
+
+
+
+</head>
+
+<body oncontextmenu="return false">
+
+		<script>
+			window.console.log = function(){
+			console.error('myResume blocked here.... ');
+			console.error('(สวัสดี) ');
+			
+			window.console.log = function() {
+				return false;
+  }
+}
+				console.log('aaaaaaaaaaaa');	
+			//alert('ssss');	
+			</script>
+
+<script >
+
+	$(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+});
+
+$(document).on("contextmenu",function(e){        
+   e.preventDefault();
+});
+
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+	document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u","f12");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+</script>
+	
+	<div class="preloader" style="display: none;">
+			<div class="spinner"><strong>Loading...<i class="fa-li fa fa-spinner fa-spin"></i></strong></div>
+	</div>
+	<div class="preloader-left slide-left"></div>
+	<div class="preloader-right slide-right"></div>
+
+	<div class="inline-menu-container hidex">
+	
+		<ul class="inline-menu">
+		
+			<li class="about menu-item">Resume</li>	
+			<li class="portfolio menu-item">Portfolio</li>
+			<li class="blog menu-item">Blog</li>		
+			<li class="contact menu-item">Contact</li>
+			<li id="close">×</li>
+		</ul>
+
+	</div>
+<!-- /////////////////////////////////////////////////Profile///////////////////////////////////////////////////////////////////-->
+
+<section class="home">
+	<div class="container">
+		<div class="name-block"> 
+			<div class="name-block-container">
+
+				
+				<h2>MY RESUME</h2>
+                 <h2>Programming :) </h2>
+				<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+				<span class="sr-only">Loading...</span>
+                     <ul class="social">
+					<li><a href="https://www.facebook.com/FDzFerRirZ"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://www.instagram.com/fdzferrir/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+				 </ul>
+				 </ul>
+
+			</div>	
+		</div> 
+
+		<div class="menu-blocks">    			
+			<div class="about-block"> 
+				<div class="about-block-container">			
+					<h2 class="about menu-item">Resume</h2>
+				</div>		
+			</div>
+
+			<div class="portfolio-block">
+				<div class="portfolio-block-container">			
+					<h2 class="portfolio menu-item">Portfolio</h2>
+				</div>
+			</div>
+
+			<div class="blog-block"> 
+				<div class="blog-block-container">			
+					<h2 class="blog menu-item">Blog</h2>
+				</div>		
+			</div>
+
+
+
+			<div class="contact-block"> 
+				<div class="contact-block-container">			
+					<h2 class="contact menu-item">Contact</h2>
+				</div>		
+			</div>
+		</div>
+
+
+		<div class="content-blocks about hidex"> 
+									
+			<section class="content" id="about"> 
+				
+				<div class="block-content">
+					<h3 class="block-title">Profile</h3>
+					<div class="row">
+						<div class="col-md-6 " style="background-color:#F1F3F6;">
+
+						<img src="./Work_pic/me.jpg" style="border-radius:3px; margin-top:15px;" >
+						
+						<ul class="info-list">
+							<li style="display: block;"><strong>Strength</strong></li>
+							<li style="display: block;">- Always fast learning and self-development</li>
+							<li style="display: block;">- High responsibility / Punctual</li>
+							<li style="display: block;">- Earnestness, Diligence and patience</li>
+							<li style="display: block;">- Good human relation and Communication skill</li>
+						</ul>
+
+						</div>
+						<div class="col-md-6" >
+							<ul class="info-list">
+								<li><strong>Name : </strong>  Nattapong Guntarian </li>
+								<li><strong>Interest  : </strong>  Web Programming / Programming  </li>
+								<li><strong>Date of birth : </strong>   June 6, 1990  </li>
+								<li><strong>Address : </strong>   14/1 M.6  Sanpapao ,Sansai District,ChiangMai,50210</li>
+								<li><strong>Email : </strong>  FDzferrir@gmail.com </li>
+								<li><strong>Phone : </strong>   091-047-7181 </li>
+								<li><strong>Military status : </strong>  Completed Reserved Officer’s Training Corp (R.O.T.C) Course </li>
+							</ul>
+						</div>					
+					</div>
+				</div> 
+				
+				<div class="block-content ">
+					<h3 class="block-title">Skills</h3>
+					<div class="row">
+						
+						<div class="col-sm-6">
+
+							
+							<h4>Back-end Skills</h4>
+
+
+							<label class="progress-bar-label">- Mysql & MSsqlserver / NosQL & Firebase - <span></span></label>
+							<div class="progress">
+								<div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+									<span>85%</span>
+								</div>
+							</div>
+
+
+
+							<label class="progress-bar-label">- PHP & Lua - <span></span></label>
+							<div class="progress">
+								<div style="width: 75%;" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+									<span>75%</span>
+								</div> 
+							</div>
+
+							<label class="progress-bar-label"> - VB & C# .net - <span></span></label>
+							<div class="progress">
+								<div style="width: 66%;" class="progress-bar" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">
+									<span>66%</span>
+								</div> 
+							</div>
+
+
+							<br>
+							<hr>
+
+							<h4>Front-end Skills</h4>
+
+
+							<label class="progress-bar-label">- HTML &amp; CSS or SCSS --> Bootstrap 3 or 4 - <span></span></label>
+							<div class="progress">
+								<div style="width: 80%;" class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+									<span>80%</span>
+								</div> 
+							</div>
+							
+							
+							<label class="progress-bar-label">- Typescript / Javascript / Jquery - <span></span></label>
+							<div class="progress">
+								<div style="width: 80%;" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+									<span>80%</span>
+								</div> 
+							</div>
+							
+
+				
+
+							<label class="progress-bar-label">- Angular 4  & ANGULARFIRE 2 - <span></span></label>
+							<div class="progress">
+								<div style="width: 60%;" class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+									<span>60%</span>
+								</div> 
+							</div>
+							
+							
+
+							
+
+							
+
+						
+
+
+						</div>
+
+						<div class="col-sm-6">
+								<h4>MOBILE Skills</h4>
+								<label class="progress-bar-label">- Ionic 3 - <span></span></label>
+								<div class="progress">
+									<div style="width: 75%;" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+										<span>75%</span>
+									</div>
+								</div>
+								<label class="progress-bar-label"> -  Cordova - <span></span></label>
+								<div class="progress">
+									<div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">
+										<span>70%</span>
+									</div>
+								</div>
+								<label class="progress-bar-label"> -  Native Android  - <span></span></label>
+								<div class="progress">
+									<div style="width: 50%;" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+										<span>50%</span>
+									</div>
+								</div>
+								<br>
+								<hr>
+	
+								<h4>Others</h4>
+
+								<label class="progress-bar-label">- Github - <span></span></label>
+								<div class="progress">
+									<div style="width: 75%;" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+										<span>75%</span>
+									</div>
+								</div>
+								<label class="progress-bar-label"> - RestfulAPI - <span></span></label>
+								<div class="progress">
+									<div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100">
+										<span>70%</span>
+									</div>
+								</div>
+						</div>
+						
+
+					</div> 
+				</div>
+
+						
+				
+				
+				<div class="block-content">
+					<h3 class="block-title">Education</h3>
+						<div class="timeline education">
+						<div class="row " >
+							<div class="col-md-12">
+								<div class="exp-holder">
+									<div class="exp">
+										<div class="hgroup"  >
+											<h4>Bachelors Of Engineering (Computer Engineering)  </h4>
+											<h5 >2012-2015</h5>
+										</div>
+										<p>Rajamangala University of Technology Lanna Chiang Mai GPA 2.63</p>
+															
+
+									</div>
+									<div class="exp">
+										<div class="hgroup">
+											<h4>High Vocational Certificate (Technic Computer)  </h4>
+											<h5>2009-2011</h5>
+										</div>
+										<p>Rajamangala University of Technology Lanna Chiang Rai GPA 2.5</p>
+									</div>
+
+
+									<div class="exp">
+											<div class="hgroup">
+												<h4>School</h4>
+												<h5>-</h5>
+											</div>
+											<p>Wattano thai payap school GPA 3.34</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					 </div>
+				</div>
+
+
+
+				
+				
+				<div class="block-content">
+					<h3 class="block-title">EXPERIENCE</h3>
+
+					<div class="timeline experience">
+						<div class="row " >
+							<div class="col-md-12">
+								<div class="exp-holder">
+
+
+
+									<div class="exp">
+										<div class="hgroup"  >
+											<h4>MINJA Co.,Ltd. (probation)</h4>
+											<h5 >2018- <span class="current">Current</span></h5>
+										</div>
+										<p>
+											 #BIG COMMERCE											
+										</p>
+										<p>											
+											#Wordpress
+									   </p>
+											<p style="color:rgb(24, 168, 120)">
+												 - Full Stack Developer												 
+											</p>
+											<p style="color:rgb(24, 168, 120)">
+													- CMS Programmer											 
+											</p>
+											
+									</div>
+
+
+									<div class="exp">
+										<div class="hgroup"  >
+											<h4>IPOWER GROUP</h4>
+											<h5 >2016-2018 </h5>
+										</div>
+										<p>
+											 #School System Management 
+											
+										</p>
+										<p>											
+											#Hotel System Management 
+									   </p>
+											<p style="color:rgb(24, 168, 120)">
+												 - Full Stack Developer
+
+											</p>
+
+									</div>
+
+
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="row text-center">
+						<div class="col-md-12 btn-email">
+							<a class="btn lowercase">fdzferrir@gmail.com</a><br>
+
+						</div>	
+					</div>
+				</div> 
+				
+			
+			</section>
+		</div>	
+<!-- //////////////////////////////////////////////////////////////////////////PORTFOLIO/////////////////////////////////////////////////////////////////// -->
+		<div class="content-blocks portfolio hidex"> 
+										
+			<section class="content">
+
+
+				
+				<div class="block-content" id="Portfolio">
+					<h3 class="block-title" >Portfolio</h3>
+
+					<ul id="filters">
+						<li class="active" data-filter="*">All</li>
+						<li data-filter=".web" class="">Web</li>
+						<li data-filter=".apps" class="">Apps</li>
+					</ul>
+
+
+
+
+
+
+					<div class="row">
+
+
+
+							<div id="projects"  class="isotope col-md-12" >
+
+
+								<div class="project web " >
+									<a class="open-project" href="sub_main/localedplan.php" >
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Go! localedplan</h4>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img  style="width:400px; max-width:400px!important;height: 250px; object-fit: cover;" src="sub_main/localedplan/header1.jpg" alt="">	<h4>ระบบประเมินคุณภาพแผนพัฒนาการศึกษา</h4>
+								</div>
+
+
+
+
+
+								<div class="project web  " >
+									<a class="open-project" href="sub_main/school.php" >
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Go! Manage School</h4>
+
+												</div>
+											</div>
+										</div>
+									</a>
+									
+									<img style="width:400px; max-width:400px!important;height: 250px;" src="sub_main/school/header.jpg" alt="">
+									<h4> Manage School</h4>
+								</div>
+
+
+
+								
+
+								<div class="project apps  text-center " >
+									<a class="open-project" href="sub_main/lotto.php" >
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Go! Lottoly</h4>
+
+												</div>
+											</div>
+										</div>
+									</a>
+									
+									<img  class="center" style="height: 250px;" src="sub_main/lotto/header.jpg" alt="">
+									<h4> Lottoly</h4>
+								</div>
+
+
+								<div class="project apps  text-center " >
+										<a class="open-project" href="sub_main/sing.php" >
+											<div class="project-overlay">
+												<div class="vcenter">
+													<div class="centrize">
+														<h4>Go! SING</h4>	
+													</div>
+												</div>
+											</div>
+										</a>
+										
+										<img  class="center" style="height: 250px;" src="sub_main/sing/sing1.jpg" alt="">
+										<h4> SING APP</h4>
+								</div>
+
+
+
+								<div class="project apps  text-center " >
+									<a class="open-project" href="sub_main/fdz.php" >
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Go! FDz</h4>	
+												</div>
+											</div>
+										</div>
+									</a>
+									
+									<img  class="center" style="height: 250px;" src="sub_main/fdz/new (2).jpg" alt="">
+									<h4> FDz APP</h4>
+							</div>
+
+
+
+
+
+
+
+
+
+
+							</div>
+
+
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+
+<!-- //////////////////////////////////////////////////////////////////////////Blog/////////////////////////////////////////////////////////////////// -->
+
+
+		<div class="content-blocks blog hidex"> 
+										
+			<section class="content"> 
+				<div class="block-content">  	  
+					<h3 class="block-title">My Blog</h3>
+					<h2>Test free host</h2>
+
+					
+				</div>	
+			</section>
+		</div>	
+	<!-- //////////////////////////////////////////////////////////////////////////Contact/////////////////////////////////////////////////////////////////// -->	
+
+<div class="content-blocks contact hidex"> 
+										
+			<section class="content"> 
+				<div class="block-content">
+					<h3 class="block-title">Contact</h3>
+					<div class="row">
+				  
+						<div class="col-md-6">
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-map-marker"></i>
+
+								</div>
+								<div class="contact-details">
+									<h5>Address</h5>
+									<p>14/1 M.6  Sanpapao ,Sansai District,Chiang Mai, 50210</p>
+								</div>
+							</div>	
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Call Me</h5>
+									<p> +66 - 091-047-7181 </p>
+								</div>
+							</div>	
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Email</h5>
+									<p>fdzferrir@gmail.com</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-6 text-center">
+								<form method="POST" action="./fdzferrir/connect_me.php" id="formcontactus" class=""> <!-- link to send email -->
+								  <div class="form-group">	
+									  <a href="http://line.me/ti/p/~fdzfenris"	>
+									<h3>LINE : FDzFenris	 </h3>
+									
+									<img  style="width:300px; max-width:300px!important;height: 300px; object-fit: cover;" src="Work_pic/lineid.jpg" alt=""
+
+									</a>					 							 
+								  </div>
+								 
+								 
+								  <!-- <div class="form-group">
+									<button type="submit" class="btn btn-dark selected">Send Message</button>
+								  </div>   -->
+								  
+								</form>
+						</div>
+					</div>  
+					
+				</div>	 				
+			</section>
+		</div>
+
+
+
+	</div>			
+</section>
+
+
+<script src="./fdzferrir/jquery.min.js"></script>
+<script type="text/javascript" src="./fdzferrir/bootstrap.min.js"></script>
+<script type="text/javascript" src="./fdzferrir/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="./fdzferrir/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="./fdzferrir/contact_me.js"></script>
+<script type="text/javascript" src="./fdzferrir/smooth-scroll.js"></script>
+<script type="text/javascript" src="./fdzferrir/main.js"></script>
+ 
+
+
+
+</section>
+</body></html>
