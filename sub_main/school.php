@@ -41,6 +41,8 @@
             <br> <hr>
             <div class="project-media">
 
+               <h2 style="color:red" class="text-center">*รูปภาพในระบบบางส่วน</h2>
+               <br>
                 <img src="sub_main/school/2.jpg" alt="">   
                 <img src="sub_main/school/3.png" alt="">
 
