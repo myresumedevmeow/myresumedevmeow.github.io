@@ -43,6 +43,7 @@
 
                <h2 style="color:red" class="text-center">*รูปภาพในระบบบางส่วน</h2>
                <br>
+                <img src="sub_main/img_all/school1.jpg" alt="">   
                 <img src="sub_main/school/2.jpg" alt="">   
                 <img src="sub_main/school/3.png" alt="">
 
@@ -59,6 +60,26 @@
                 <hr><br>
                 <img src="sub_main/school/menudurable2.jpg" alt=""><br>
                 <img src="sub_main/school/menudurable3.jpg" alt=""> <br>
+                <hr><br>
+                <img src="sub_main/img_all/school9.jpg" alt="">
+                <h2> รายละเอียดวันลาของข้าราชการครู/ลูกจ้างประจำ </h2>
+                <hr><br>
+
+                <img src="sub_main/img_all/school10.jpg" alt="">
+                <h2> ปฏิทินการศึกษา </h2>
+                <hr><br>
+
+                <img src="sub_main/img_all/school11.jpg" alt="">
+                <h2> ตารางสอนสำหรับครู </h2>
+                <hr><br>
+
+                <img src="sub_main/img_all/school12.jpg" alt="">
+                <h2> ระบบนิเทศภายใน </h2>
+                <hr><br>
+
+                <img src="sub_main/img_all/school17.jpg" alt="">
+                <h2> ระบบหนังสือภายนอก/ภายใน </h2>
+                <hr><br>
 
 
                 
